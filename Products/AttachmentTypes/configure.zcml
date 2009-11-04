@@ -12,7 +12,7 @@
        install the product
     -->
     <gs:registerProfile
-       name="AttachmentTypes"
+       name="default"
        title="Attachment support"
        directory="profiles/default"
        description="Attachment content types and widget"
