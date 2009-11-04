@@ -22,9 +22,12 @@ def setupAttachments(context):
         linkable.append('LinkAttachment')
     # kupu_library_tool has an idiotic interface, basically written purely to
     # work with its configuration page. :-(
-    kupuTool.updateResourceTypes(({'resource_type' : 'linkable',
-                                   'old_type'      : 'linkable',
-                                   'portal_types'  :  linkable},))
+    try:
+        kupuTool.updateResourceTypes(({'resource_type' : 'linkable',
+                                       'old_type'      : 'linkable',
+                                       'portal_types'  :  linkable},))
+    except:
+        pass
 
 def registerImagesFormControllerActions(context, contentType=None, template='base_edit'):
     """Register the form controller actions necessary for the widget to work.
