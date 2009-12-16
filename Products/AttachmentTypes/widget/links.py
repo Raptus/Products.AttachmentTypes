@@ -15,8 +15,11 @@ class LinksManagerWidget(TypesWidget):
     def isVisible(self, instance, mode='view'):
         """
         """
-        if instance.isTemporary():
-            return 'invisible'
+        try:
+            if instance.isTemporary():
+                return 'invisible'
+        except:
+            pass
         return TypesWidget.isVisible(self, instance, mode)
 
     # Use the base class properties, and add two of our own
