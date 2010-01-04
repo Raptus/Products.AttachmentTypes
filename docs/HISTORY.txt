@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.5
+---
+
+* Added attachment types to factorytool
+
 1.4
 ---
 
