@@ -6,7 +6,7 @@ version = '1.6'
 setup(name='Products.AttachmentTypes',
       version=version,
       description="Provides attachment content types for link, image, and file",
-      long_description=open("README.txt").read() + "\n" +
+      long_description=open("README.rst").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
@@ -16,7 +16,7 @@ setup(name='Products.AttachmentTypes',
       keywords='plone archetypes attachment content',
       author='Raptus AG',
       author_email='dev@raptus.com',
-      url='https://svn.plone.org/svn/collective/Products.AttachmentTypes',
+      url='https://github.com/Raptus/Products.AttachmentTypes',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
       namespace_packages=['Products'],
